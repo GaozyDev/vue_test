@@ -1,5 +1,5 @@
 {
-  "name": "13_src_",
+  "name": "23_src_",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "nanoid": "^3.3.2",
     "vue": "^2.6.14"
   },
   "devDependencies": {
