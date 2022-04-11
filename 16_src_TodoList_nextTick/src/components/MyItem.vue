@@ -11,6 +11,8 @@
           v-show="todo.isEdit"
           :value="todo.title"
           @blur="handleBlur(todo,$event)"
+          ref="inputTitle"
+
       >
     </label>
     <button class="btn btn-danger" @click="handleDetele(todo.id)">删除</button>
@@ -48,17 +50,26 @@ export default {
     },
     //编辑
     handleEdit(todo) {
-      if (todo.hasOwnProperty('isEdit')){
+      if (todo.hasOwnProperty('isEdit')) {
         todo.isEdit = true
-      }else {
+      } else {
         this.$set(todo, 'isEdit', true)
       }
+      //nextTick会在DOM节点更新完毕之后再执行回调函数
+      this.$nextTick(function(){
+        this.$refs.inputTitle.focus()
+      })
+
+      //等200毫秒,,等vue把input框放在页面上我再去获取焦点
+      // setTimeout(()=>{
+      //   this.$refs.inputTitle.focus()
+      // },200)
     },
     //失去焦点回调(真正执行修改逻辑)
-    handleBlur(todo,e) {
+    handleBlur(todo, e) {
       todo.isEdit = false
-      if(!e.target.value.trim()) return alert('输入不能为空!')
-      this.$bus.$emit('updateTodo',todo.id,e.target.value)
+      if (!e.target.value.trim()) return alert('输入不能为空!')
+      this.$bus.$emit('updateTodo', todo.id, e.target.value)
     },
 
   }
