@@ -12,7 +12,7 @@
     <!--    展示加载中-->
     <h1 v-show="info.isLoading">加载中.....</h1>
     <!--    展示错误信息-->
-    <h1 v-show="info.errMsg">{{info.errMsg}}</h1>
+    <h1 v-show="info.errMsg">{{ info.errMsg }}</h1>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
   name: 'List',
   data() {
     return {
-      info:{
+      info: {
         isFirst: true,
         isLoading: false,
         errMsg: '',
@@ -30,8 +30,10 @@ export default {
     }
   },
   mounted() {
-    this.$bus.$on('updateListDate', (dataObj) => {
-      this.info = dataObj
+    this.$bus.$on('updateListData', (dataObj) => {
+      // this.info = dataObj
+      //ES6中通过字面量的形式去合并对象,重名的属性以dataObj为主,dataObj没有的属性,this.info该有的还有
+      this.info = {...this.info,...dataObj}
       // console.log('我是List组件，收到数据：', users)
       // console.log(dataObj)
 
