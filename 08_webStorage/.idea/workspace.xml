@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="356cff41-6ad5-4ae9-a8c6-aa2e83705fb6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../03_src_props配置/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../03_src_props配置/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_src_mixin混入（合）/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../04_src_mixin混入（合）/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05_src_插件/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../05_src_插件/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06_src_scoped样式/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../06_src_scoped样式/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07_src_TodoList案例/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07_src_TodoList案例/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../19_src_配置代理服务器/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../19_src_配置代理服务器/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../19_src_配置代理服务器/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../19_src_配置代理服务器/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../19_src_配置代理服务器/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../19_src_配置代理服务器/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../19_src_配置代理服务器/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../19_src_配置代理服务器/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../19_src_配置代理服务器/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../19_src_配置代理服务器/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../19_src_配置代理服务器/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../19_src_配置代理服务器/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../19_src_配置代理服务器/vue.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="27g703WE9bSJpga7jsu6VV3kNJQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../09_src_TodoList_本地存储" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="356cff41-6ad5-4ae9-a8c6-aa2e83705fb6" name="Changes" comment="" />
+      <created>1649729651464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649729651464</updated>
+      <workItem from="1649729652547" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
