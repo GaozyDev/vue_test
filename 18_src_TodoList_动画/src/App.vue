@@ -16,9 +16,9 @@
 
 <script>
 import pubsub from 'pubsub-js'
-import MyHeader from "../../16_src_TodoList_nextTick/src/components/MyHeader";
-import MyList from "../../16_src_TodoList_nextTick/src/components/MyList";
-import MyFooter from "../../16_src_TodoList_nextTick/src/components/MyFooter";
+import MyHeader from "./components/MyHeader";
+import MyFooter from "./components/MyFooter";
+import MyList from "./components/MyList";
 
 
 export default {

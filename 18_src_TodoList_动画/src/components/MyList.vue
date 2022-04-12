@@ -1,23 +1,25 @@
 <template>
-  <ul class="todo-main">
-    <transition-group name="todo" appear>
+
+    <ul class="todo-main">
+      <transition-group name="todo" appear>
       <MyItem
           v-for="todoObj in todos"
           :key="todoObj.id"
           :todo="todoObj"
       />
-    </transition-group>
-  </ul>
+      </transition-group>
+    </ul>
+
 </template>
 
 <script>
 import MyItem from "@/components/MyItem";
 
-export default {
-  name: 'MyList',
-  components: {MyItem},
-  props: ['todos']
-}
+  export default {
+    name:'MyList',
+    components:{MyItem},
+    props:['todos']
+  }
 </script>
 
 <style scoped>
@@ -28,7 +30,6 @@ export default {
   border-radius: 2px;
   padding: 0px;
 }
-
 .todo-empty {
   height: 40px;
   line-height: 40px;
@@ -38,16 +39,15 @@ export default {
   margin-top: 10px;
 }
 
-.todo-enter-active {
-  animation: todo 1s linear;
+.todo-enter-active{
+  animation:todo 1s linear;
 }
-
-.todo-leave-active {
-  animation: todo 1s linear reverse;
+.todo-leave-active{
+  animation:todo 1s linear reverse;
 }
 
 @keyframes todo {
-  from {
+  from{
     transform: translateX(100%);
   }
   to {

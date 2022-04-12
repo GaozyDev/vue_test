@@ -1,24 +1,26 @@
 <template>
-    <li>
-      <label>
-        <!--<input type="checkbox" :checked="todo.done" @click="handleCheck(todo.id)"/>-->
-        <input type="checkbox" :checked="todo.done" @change="handleCheck(todo.id)"/>
-        <!--如下代码也能实现功能,但是不太推荐,因为有点违反原则,因为修改了props-->
-        <!--<input type="checkbox" v-model="todo.done"/>-->
-        <span v-show="!todo.isEdit">{{ todo.title }}</span>
-        <input
-            type="text"
-            v-show="todo.isEdit"
-            :value="todo.title"
-            @blur="handleBlur(todo,$event)"
-            ref="inputTitle"
+<!--  <transition name="todo" appear>-->
+  <li>
+    <label>
+      <!--<input type="checkbox" :checked="todo.done" @click="handleCheck(todo.id)"/>-->
+      <input type="checkbox" :checked="todo.done" @change="handleCheck(todo.id)"/>
+      <!--如下代码也能实现功能,但是不太推荐,因为有点违反原则,因为修改了props-->
+      <!--<input type="checkbox" v-model="todo.done"/>-->
+      <span v-show="!todo.isEdit">{{ todo.title }}</span>
+      <input
+          type="text"
+          v-show="todo.isEdit"
+          :value="todo.title"
+          @blur="handleBlur(todo,$event)"
+          ref="inputTitle"
 
-        >
-      </label>
-      <button class="btn btn-danger" @click="handleDetele(todo.id)">删除</button>
-      <button v-show="!todo.isEdit" class="btn btn-edit" @click="handleEdit(todo)">编辑</button>
+      >
+    </label>
+    <button class="btn btn-danger" @click="handleDetele(todo.id)">删除</button>
+    <button v-show="!todo.isEdit" class="btn btn-edit" @click="handleEdit(todo)">编辑</button>
 
-    </li>
+  </li>
+<!--  </transition>-->
 </template>
 
 <script>
@@ -120,6 +122,20 @@ li:hover button {
   display: block;
 }
 
+/*.todo-enter-active{*/
+/*  animation:todo 1s linear;*/
+/*}*/
+/*.todo-leave-active{*/
+/*  animation:todo 1s linear reverse;*/
+/*}*/
 
+/*@keyframes todo {*/
+/*  from{*/
+/*    transform: translateX(100%);*/
+/*  }*/
+/*  to {*/
+/*    transform: translateX(0);*/
+/*  }*/
+/*}*/
 </style>
 
