@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad63e673-f24f-4dab-b9b8-eba46602a9a5" name="Changes" comment="增加入口文件代码">
-      <change beforePath="$PROJECT_DIR$/1_src_求和案例_纯vue版/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_src_求和案例_纯vue版/components/Count.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_src_求和案例_纯vue版/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../23_src_求和案例_纯vue版/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="ad63e673-f24f-4dab-b9b8-eba46602a9a5" name="Changes" comment="求和案例_纯vue版">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../24_src_求和案例各版本" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -43,6 +39,8 @@
       <option name="presentableId" value="Default" />
       <updated>1649837676362</updated>
       <workItem from="1649837678856" duration="302000" />
+      <workItem from="1649838026839" duration="251000" />
+      <workItem from="1649838556331" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="增加入口文件代码">
       <created>1649837888071</created>
@@ -51,7 +49,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649837888071</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="求和案例_纯vue版">
+      <created>1649838276732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649838276732</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,6 +75,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加入口文件代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加入口文件代码" />
+    <MESSAGE value="求和案例_纯vue版" />
+    <option name="LAST_COMMIT_MESSAGE" value="求和案例_纯vue版" />
   </component>
 </project>
