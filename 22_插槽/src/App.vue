@@ -1,13 +1,7 @@
 <template>
   <div class="container">
     <Category title="美食">
-<!--      <template v-slot:center>-->
-<!--        <img src="../src/assets/shaokao.jpeg">-->
-<!--      </template>-->
-      <img slot="center" src="../src/assets/shaokao.jpeg">
-<!--      <template v-slot:footer>-->
-<!--        <a href="http://www.atguigu.com">更多美食</a>-->
-<!--      </template>-->
+      <img slot="center" src="../src/assets/shaokao.jpeg" alt="">
       <a slot="footer" href="http://www.atguigu.com">更多美食</a>
     </Category>
     <Category title="游戏">
