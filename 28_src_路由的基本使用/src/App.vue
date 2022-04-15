@@ -1,9 +1,7 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-xs-offset-2 col-xs-8">
-        <div class="page-header"><h2>Vue Router Demo</h2></div>
-      </div>
+      <Banner/>
     </div>
     <div class="row">
       <div class="col-xs-2 col-xs-offset-2">
@@ -30,11 +28,10 @@
 </template>
 
 <script>
-import Home from './components/Home'
-import About from './components/About'
+import Banner from './components/Banner'
 
 export default {
   name: 'App',
-  components:{About,Home},
+  components:{Banner},
 }
 </script>
