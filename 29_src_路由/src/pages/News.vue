@@ -19,7 +19,7 @@ export default {
   // beforeDestroy() {
   //   clearInterval(this.timer)
   // },
-
+  //
   // mounted() {
   //   this.timer = setInterval(() =>{
   //     this.opacity -= 0.005
@@ -28,13 +28,13 @@ export default {
   // }
 
   activated() {
-      clearInterval(this.timer)
+    this.timer = setInterval(() =>{
+      this.opacity -= 0.005
+      if(this.opacity <= 0) this.opacity = 1
+    })
   },
   deactivated() {
-      this.timer = setInterval(() =>{
-        this.opacity -= 0.005
-        if(this.opacity <= 0) this.opacity = 1
-      })
+    clearInterval(this.timer)
   }
 }
 </script>
