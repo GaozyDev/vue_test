@@ -14,7 +14,7 @@ const router = new VueRouter({
             name: 'guanyu',
             path: '/about',
             component: About,
-            meta: {isAuth: true,title: '关于'},
+            meta: {title: '关于'},
         },
         {
             name: 'zhuye',
@@ -27,19 +27,19 @@ const router = new VueRouter({
                     path: 'news',
                     component: News,
                     meta: {isAuth: true, title: '新闻'},
-                    // beforeEnter: (to, from, next) => {
-                    //     if (to.meta.isAuth) {//判断是否需要鉴权
-                    //         if (localStorage.getItem('school') === 'atguigu') {
-                    //             // document.title = to.meta.title || '硅谷系统'
-                    //             next()
-                    //         } else {
-                    //             alert('学校名不对，无权限！！')
-                    //         }
-                    //     } else {
-                    //         // document.title = to.meta.title || '硅谷系统'
-                    //         next()
-                    //     }
-                    // }
+                    beforeEnter: (to, from, next) => {
+                        if (to.meta.isAuth) {//判断是否需要鉴权
+                            if (localStorage.getItem('school') === 'atguigu') {
+                                // document.title = to.meta.title || '硅谷系统'
+                                next()
+                            } else {
+                                alert('学校名不对，无权限！！')
+                            }
+                        } else {
+                            // document.title = to.meta.title || '硅谷系统'
+                            next()
+                        }
+                    }
                 },
                 {
                     name: 'xiaoxi',
