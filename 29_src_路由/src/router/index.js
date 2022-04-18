@@ -1,4 +1,4 @@
-//该文件专门用于创建整个应用的路由器
+// 该文件专门用于创建整个应用的路由器
 import VueRouter from 'vue-router'
 //引入组件
 import About from '../pages/About'
@@ -9,6 +9,8 @@ import Detail from '../pages/Detail'
 
 //创建并暴露一个路由器
 const router = new VueRouter({
+    //路由器的两种工作模式：hash和history,,hash模式有一个明显的特点就是路径后面带有#，并且#后面的东西在http请求时不会发给服务器
+    mode:'history',
     routes: [
         {
             name: 'guanyu',
